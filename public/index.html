@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storefront - Add Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Storefront Management</h1>
+        <form action="/add-item" method="POST">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">Price ($):</label>
+                <input type="number" id="itemPrice" name="itemPrice" step="0.01" required>
+            </div>
+            <button type="submit">Add to Catalog</button>
+        </form>
+        <div id="catalog-preview">
+            <a href="/catalog">View Catalog</a>
+        </div>
+    </div>
+</body>
+</html>
